@@ -10,7 +10,7 @@ source:
   sha256: 8ef1fa9df3671cadd6e1d8ab70a770b78fe54ea511c4737654e14e0865a84a9e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -22,7 +22,7 @@ requirements:
     - dask
     - earthengine-api
     - eemont
-    - matplotlib
+    - matplotlib-base
     - numpy
     - pandas
     - python >=3.7
