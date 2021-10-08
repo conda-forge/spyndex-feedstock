@@ -1,18 +1,18 @@
 {% set name = "spyndex" %}
-{% set version = "0.0.1" %}
+{% set version = "0.0.2" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 8ef1fa9df3671cadd6e1d8ab70a770b78fe54ea511c4737654e14e0865a84a9e
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: e023d8b3293fcbd5d29fcff5a6963e3d20b0e2a08cd06399fe3129332c81e817
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -36,11 +36,11 @@ test:
     - spyndex
 
 about:
-  home: "https://github.com/davemlz/spyndex"
+  home: https://github.com/davemlz/spyndex
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "Awesome Spectral Indices in Python"
+  summary: Awesome Spectral Indices in Python
   doc_url: https://spyndex.readthedocs.io/
   dev_url: https://github.com/davemlz/spyndex
 
