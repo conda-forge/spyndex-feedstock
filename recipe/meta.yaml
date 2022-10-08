@@ -1,5 +1,5 @@
 {% set name = "spyndex" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 137374e36c24ecbd76d6e23cb87afc004828727be0f74e171c399b8b85a31f17
+  sha256: b2041ef72dda33ece858ace99c7f6b9fa360ecbdd29c2db6d345f1b2705be8a6
 
 build:
   number: 0
