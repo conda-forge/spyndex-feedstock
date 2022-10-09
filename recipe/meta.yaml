@@ -1,5 +1,5 @@
 {% set name = "spyndex" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 137374e36c24ecbd76d6e23cb87afc004828727be0f74e171c399b8b85a31f17
+  sha256: b2041ef72dda33ece858ace99c7f6b9fa360ecbdd29c2db6d345f1b2705be8a6
 
 build:
   number: 0
@@ -21,12 +21,12 @@ requirements:
   run:
     - dask >=2021.9.1
     - earthengine-api
-    - eemont >=0.2.5
+    - eemont >=0.3.5
     - matplotlib-base
     - numpy
     - pandas
     - python >=3.7
-    - python-box
+    - python-box >=6.0
     - requests
     - seaborn
     - xarray
@@ -36,13 +36,13 @@ test:
     - spyndex
 
 about:
-  home: https://github.com/davemlz/spyndex
+  home: https://github.com/awesome-spectral-indices/spyndex
   license: MIT
   license_family: MIT
   license_file: LICENSE
   summary: Awesome Spectral Indices in Python
   doc_url: https://spyndex.readthedocs.io/
-  dev_url: https://github.com/davemlz/spyndex
+  dev_url: https://github.com//awesome-spectral-indices/spyndex
 
 extra:
   recipe-maintainers:
