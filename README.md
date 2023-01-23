@@ -1,7 +1,7 @@
 About spyndex
 =============
 
-Home: https://github.com/davemlz/spyndex
+Home: https://github.com/awesome-spectral-indices/spyndex
 
 Package license: MIT
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spyndex-feedsto
 
 Summary: Awesome Spectral Indices in Python
 
-Development: https://github.com/davemlz/spyndex
+Development: https://github.com//awesome-spectral-indices/spyndex
 
 Documentation: https://spyndex.readthedocs.io/
 
