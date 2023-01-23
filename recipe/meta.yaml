@@ -21,7 +21,7 @@ requirements:
   run:
     - dask >=2021.9.1
     - earthengine-api
-    - eemont >=0.3.5
+    - eemont >=0.3.6
     - matplotlib-base
     - numpy
     - pandas
