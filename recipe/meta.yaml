@@ -1,5 +1,5 @@
 {% set name = "spyndex" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b2041ef72dda33ece858ace99c7f6b9fa360ecbdd29c2db6d345f1b2705be8a6
+  sha256: 11d1ddcfad41cefaa09f29e6566e7d0df76bd9a64dca4af4a09bdbeb9b4a24a8
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
   run:
     - dask >=2021.9.1
     - earthengine-api
-    - eemont >=0.3.5
+    - eemont >=0.3.6
     - matplotlib-base
     - numpy
     - pandas
