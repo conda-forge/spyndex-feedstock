@@ -1,11 +1,11 @@
-About spyndex
-=============
+About spyndex-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spyndex-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/awesome-spectral-indices/spyndex
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spyndex-feedstock/blob/main/LICENSE.txt)
 
 Summary: Awesome Spectral Indices in Python
 
