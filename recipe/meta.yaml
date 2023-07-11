@@ -1,46 +1,47 @@
 {% set name = "spyndex" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 80cb3f3ed43abbdd0c67d9952131ba278daee5b000da5295839b72f8067e01c0
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/spyndex-{{ version }}.tar.gz
+  sha256: c5d697a84c191e81b2e754c1eac6ca85c636295f1f97f9cf6ac916ef2cad1c6d
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
+    - python >=3.9
     - pip
-    - python >=3.7
   run:
-    - dask >=2021.9.1
-    - earthengine-api
+    - python >=3.9
+    - dask-core >=2023.7.0
     - eemont >=0.3.6
     - matplotlib-base
-    - numpy
-    - pandas
-    - python >=3.7
+    - pandas >=2.0.3
     - python-box >=6.0
     - requests
     - seaborn
-    - xarray
+    - xarray >=2023.6.0
 
 test:
   imports:
     - spyndex
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/awesome-spectral-indices/spyndex
-  license: MIT
-  license_family: MIT
-  license_file: LICENSE
   summary: Awesome Spectral Indices in Python
+  license: MIT
+  license_file: LICENSE
   doc_url: https://spyndex.readthedocs.io/
   dev_url: https://github.com//awesome-spectral-indices/spyndex
 
