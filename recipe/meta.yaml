@@ -22,6 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.8
+    - setuptools
     - dask-core >=2023.7.0
     - earthengine-api >=1.5.24
     - eemont >=0.3.6
