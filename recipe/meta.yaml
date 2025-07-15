@@ -1,29 +1,34 @@
 {% set name = "spyndex" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/spyndex-{{ version }}.tar.gz
-  sha256: 09e660d21ac065dca2d950adc67347fcb0e2d5e4439d02ea129ee35b10084445
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/spyndex-{{ version }}.tar.gz
+  sha256: 80725ce7f027a38d817651034c9fc0c11f15d02fb1102cf73e3440c7d8a892f8
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.8
+    - setuptools >=61.0
+    - wheel
     - pip
   run:
-    - python >=3.9
+    - python >=3.8
+    - setuptools
     - dask-core >=2023.7.0
+    - earthengine-api >=1.5.24
     - eemont >=0.3.6
     - matplotlib-base
     - pandas >=2.0.3
+    - pyarrow
     - python-box >=6.0
     - requests
     - seaborn
