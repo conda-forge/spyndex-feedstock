@@ -1,5 +1,5 @@
 {% set name = "spyndex" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/spyndex-{{ version }}.tar.gz
-  sha256: 80725ce7f027a38d817651034c9fc0c11f15d02fb1102cf73e3440c7d8a892f8
+  sha256: 1ed6247cb52fdc7e0d7e7b4b8ccc8afb8cc3e0d2629ede389b100702f8fe1310
 
 build:
   noarch: python
@@ -22,10 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - setuptools
     - dask-core >=2023.7.0
-    - earthengine-api >=1.5.24
-    - eemont >=0.3.6
     - matplotlib-base
     - pandas >=2.0.3
     - pyarrow
