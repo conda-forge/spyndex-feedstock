@@ -1,5 +1,5 @@
 {% set name = "spyndex" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/spyndex-{{ version }}.tar.gz
-  sha256: 8ba1cc224ded5cd7c6db9d74dd86a4788a84a6c3e17cf53e777f6240c72c5b90
+  sha256: 3c47a5a909c9f1e337e7c7936bd74be09d8b26d1824e3f6ad11d74783b57a889
 
 build:
   noarch: python
